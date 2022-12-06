@@ -145,9 +145,10 @@ namespace SQL_CRUD_Operations
 
             try
             {
-                cmd.CommandText = "DELETE FROM salary where salary_ID=@salary_ID";
+                cmd.CommandText = "DELETE FROM salary where salary_ID=@salary_ID OR job_ID=@job_ID";
                 cmd.Prepare();
                 cmd.Parameters.AddWithValue("@salary_ID", salary_ID_txt.Text);
+                cmd.Parameters.AddWithValue("@job_ID", job_ID_txt.Text);
 
                 cmd.ExecuteNonQuery();
                 dataGridView1.Rows.Clear();
