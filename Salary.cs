@@ -170,12 +170,7 @@ namespace SQL_CRUD_Operations
             this.Hide();
         }
 
-        private void display_btn_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Rows.Clear();
-            data_show();
-        }
-
+        
         
     }
 }
