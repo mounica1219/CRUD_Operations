@@ -169,9 +169,15 @@ namespace SQL_CRUD_Operations
             t.Show();
             this.Hide();
         }
+        private void display_btn_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            data_show();
+        }
+    
 
-        
-        
+
+
     }
 }
 
